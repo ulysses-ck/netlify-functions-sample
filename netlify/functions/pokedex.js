@@ -1,4 +1,4 @@
-import fetch from 'node-fetch'
+import("node-fetch")
 
 exports.handler = async function () {
     const POKE_API = "https://pokeapi.co/api/v2/pokedex/kanto";
@@ -7,5 +7,5 @@ exports.handler = async function () {
     return ({
         statusCode: 200,
         body: JSON.stringify(data)
-})
+    })
 }
